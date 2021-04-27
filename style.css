@@ -1,0 +1,327 @@
+/* -------------------------------------------
+Table of Content 
+
+Font
+General CSS Start
+Common CSS Start
+1.0 Header CSS Start
+2.0 Hero Area CSS Start
+3.0 Promotional Area CSS Start
+4.0 Category Section CSS Start
+5.0 Fresh Product Section CSS Start
+------------------------------------------- */
+/* Import Font Here */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&family=Roboto:wght@700&display=swap');
+
+
+/* General CSS Start */
+*{
+	margin: 0;
+	padding: 0;
+}
+*, *:after, *:before {
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+	-webkit-font-smoothing: antialiased; font-smooth: antialiased; text-rendering: optimizeLegibility;
+	text-rendering: optimizeLegibility;
+}
+:root {
+    --white: #ffffff; 
+	--black: #000000;
+	--btnColor: #338814;
+	--promotionalAreaBg: #2E880E;
+	--subTitleColor: #828282;
+	--categoryCount: #333333;
+	--headerBorder: ##e5e5e5
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+/* General CSS End */
+
+/* Common CSS Start */
+.textColorWhite{
+	color: var(--white);
+}
+.section__title{
+	color: var(--black);
+	font-family: Montserrat, sans-serif;
+	font-weight: 700;
+}
+.section__subTitle{
+	margin-top: 15px;
+	color: var(--subTitleColor);
+	font-family: Montserrat, sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+/* Common CSS End */
+
+/* 1.0 Header CSS Start */
+.headerSection{
+	width: 100%;
+	height: 10vh;
+	background: var(--white);
+}
+.headerSection__items{
+	display: flex;
+	align-items: center;
+	height: 10vh;
+}
+.headerSection__menuBtn {
+	background: var(--white);
+	border: none;
+	font-family: Roboto, sans-serif;
+	text-transform: uppercase;
+	font-size: 12px;
+	border-right: 1px solid var(--headerBorder);
+	padding: 0 10px;
+}
+.category-bars {
+	padding-right: 8px;
+}
+.category-arrow {
+	padding-left: 8px;
+	font-size: 10px;
+}
+.headerSection__dropdown {
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	overflow: auto;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+.dropdown-content a {
+	color: var(--black);
+	padding: 8px 16px;
+	text-decoration: none;
+	display: block;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-family: Roboto, sans-serif;
+}
+.show {
+	display: block;
+}
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+.headerSection__menuArea ul li {
+	display: inline;
+	padding: 0 15px;
+}
+.headerSection__menuArea ul li a {
+	color: #000000;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Roboto, sans-serif;
+	font-size: 12px;
+}
+
+.headerSection__iconsArea ul li {
+	display: inline;
+	padding: 0 15px;
+}
+.headerSection__iconsArea ul li a {
+	color: #000000;
+	text-decoration: none;
+	font-size: 16px;
+}
+/* 1.0 Header CSS End */
+
+
+/* 2.0 Hero Area CSS Start */
+.heroAreaSection {
+	background-image: url(./assets/images/hero-bg.webp);
+	width: 100%;
+	height: 90vh;
+	background-repeat: no-repeat;
+	background-size: 100% 150%;
+	position: relative;
+}
+.heroAreaSection__overlay{
+	position: absolute;
+	width: 100%;
+	height: 90vh;
+	background-color:rgba(0, 0, 0, 0.3);
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.heroAreaSection__subheading {
+	font-size: 28px;
+	font-family: Montserrat, sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.heroAreaSection__heading{
+	font-size: 72px;
+	font-family: Montserrat, sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+.heroAreaSection__tagLine{
+	font-size: 16px;
+	font-family: Montserrat, sans-serif;
+	font-weight: 400;
+	text-transform: capitalize;
+	text-align: center;
+}
+.heroAreaSection__shopNowBtn {
+	background-color: var(--btnColor);
+	border: 2px solid var(--btnColor);
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 600;
+	font-family: Montserrat, sans-serif;
+	padding: 8px 20px;
+	border-radius: 31px;
+}
+.heroAreaSection__shopNowBtn:hover{
+	background-color: var(--white);
+	color: var(--btnColor);
+	transition: 0.3s ease all;
+}
+/* 2.0 Hero Area CSS End */
+
+/* 3.0 Promotional Area CSS Start */
+.promotionalArea__bg{
+	background-color: var(--promotionalAreaBg);
+	width: 100%;
+	height: 315px;
+}
+.promotionalArea__contents{
+	margin-top: 75px;
+}
+.promotionalArea__title {
+	font-family: Montserrat, sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	margin-top: 30px;
+}
+.promotionalArea__subTitle{
+	font-family: Montserrat, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	margin-top: 15px;
+}
+.promotionalArea__contentsIcon{
+	height: 73px;
+	width: auto;
+}
+/* 3.0 Promotional Area CSS End */
+
+/* 4.0 Category Section CSS Start */
+.categorySection{
+	margin-top: 90px;
+}
+.categorySection__contents{
+	margin-top: 30px;
+}
+.categorySection__items {
+	width: 100%;
+	height: 170px;
+	border-radius: 5px;
+	background-repeat: no-repeat;
+	background-position: left;
+	position: relative;
+}
+.categorySection__itemsOne{
+	background-image: url(./assets/images/categories/category-1.webp);
+}
+.categorySection__itemsTwo {
+	background-image: url(./assets/images/categories/category-2.webp);
+	background-position: 10% 41%;
+}
+.categorySection__itemsThree{
+	background-image: url(./assets/images/categories/category-3.webp);
+}
+.categorySection__itemsFour{
+	background-image: url(./assets/images/categories/category-4.webp);
+}
+.categorySection__itemsFive {
+	background-image: url(./assets/images/categories/category-5.webp);
+	background-position: 28% 64%;
+}
+.categorySection__itemsSix{
+	background-image: url(./assets/images/categories/category-6.webp);
+}
+.categorySection__itemsTitle{
+	position: absolute;
+	top: 25%;
+	left: 8%;
+	font-size: 18px;
+	font-family: Montserrat, sans-serif;
+	font-weight: 700;
+	color: var(--black);
+}
+.categorySection__itemsCount {
+	position: absolute;
+	font-family: Montserrat, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: var(--categoryCount);
+	top: 43%;
+	left: 8%;
+}
+.categorySection__btn {
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid var(--btnColor);
+	color: var(--btnColor);
+	font-size: 14px;
+	font-family: Montserrat, sans-serif;
+	font-weight: 500;
+	position: absolute;
+	bottom: 25%;
+	left: 8%;
+}
+/* 4.0 Category Section CSS End */
+
+/* 5.0 Fresh Product Section CSS Start */
+.freshProductSection{
+	margin-top: 81px;
+}
+.freshProductSection__contents{
+	margin-top: 40px;
+}
+.freshProduct__card {
+	border: 1px solid #E5E5E5;
+	border-radius: 5px;
+	padding: 50px 0;
+}
+.freshProduct__card img{
+	height: 100px;
+	width: auto;
+}
+.freshProduct__card ul{
+	margin-top: 45px;
+}
+.freshProduct__card ul li{
+	display: inline;
+}
+.freshProduct__card ul li a{
+	color: #FFB900;
+}
+.freshProduct__productTitle {
+	font-size: 16px;
+	font-family: Montserrat, sans-serif;
+	font-weight: 600;
+	line-height: 40px;
+}
+.freshProduct__productPrice{
+	font-size: 20px;
+	font-family: Montserrat, sans-serif;
+	font-weight: 400;
+	color: var(--promotionalAreaBg);
+}
+/* 5.0 Fresh Product Section CSS End */

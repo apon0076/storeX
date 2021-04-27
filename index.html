@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Insert Favicon Here -->
+    <link href="./assets/images/favicon.ico" rel="icon">
+
+    <!-- Page Title(Name)-->
+    <title>StoreX</title>
+
+    <!-- Bootstrap CSS File -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <!-- Reset CSS File -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+
+    <!-- Font-Awesome CSS File -->
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+
+    <!-- Custom Style CSS File -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Responsive Style CSS File -->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+    <!-- header section start -->
+    <header class="headerSection">
+        <div class="container-fluid">
+            <div class="row headerSection__items">
+                <div class="col-lg-5 col-md-12 col-sm-12 ">
+                    <div class="headerSection__menuArea ">
+                        <ul>
+                            <div class="headerSection__dropdown">
+                                <button onclick="dropdownFunction()" class="headerSection__menuBtn"><i
+                                        class="fas fa-bars category-bars"></i> category <i
+                                        class="fas fa-chevron-down category-arrow"></i></button>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a href="#">Home</a>
+                                    <a href="#">About</a>
+                                    <a href="#">Contact</a>
+                                </div>
+                            </div>
+
+                            <li><a href="#">new arrivals</a></li>
+                            <li><a href="#">today's deals</a></li>
+                            <li><a href="#">flash sales</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-12 col-sm-12 text-center">
+                    <a href="./index.html"><img class="headerSectionLogo" src="./assets/images/StoreX-logo.webp" alt="site-logo"></a>
+                </div>
+
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                    <div class="headerSection__iconsArea text-end ">
+                        <ul>
+                            <li><a href="#"><i class="fas fa-search"></i></a></li>
+                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fas fa-shopping-basket"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header section end -->
+
+    <!-- Hero area start -->
+    <div class="heroAreaSection">
+        <div class="heroAreaSection__overlay">
+            <p class="textColorWhite heroAreaSection__subheading">Natural Health</p>
+            <p class="textColorWhite heroAreaSection__heading">Organic Food</p>
+            <p class="textColorWhite heroAreaSection__tagLine">The UK’s largest fully certified organic <br>
+                supermarket, Organic food delivery</p>
+            <button class="textColorWhite heroAreaSection__shopNowBtn mt-4">shop now</button>
+        </div>
+    </div>
+    <!-- Hero area end -->
+
+    <!-- Promotional Area Start -->
+    <div class="promotionalArea__bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 text-center promotionalArea__contents">
+                    <img class="promotionalArea__contentsIcon" src="./assets/images/icons/receiveOrders.webp" alt="Orders">
+                    <p class="textColorWhite promotionalArea__title">Receive your Order</p>
+                    <p class="textColorWhite promotionalArea__subTitle">Pesto sauce zucchini jalapenos, <br> halkidiki green olives Cherry mozzarella mozzarella</p>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6 text-center promotionalArea__contents">
+                    <img class="promotionalArea__contentsIcon" src="./assets/images/icons/freeReturns.webp" alt="freeReturns">
+                    <p class="textColorWhite promotionalArea__title">Free Returns</p>
+                    <p class="textColorWhite promotionalArea__subTitle">Pesto sauce zucchini jalapenos, <br> halkidiki green olives Cherry mozzarella mozzarella</p>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6 text-center promotionalArea__contents">
+                    <img class="promotionalArea__contentsIcon" src="./assets/images/icons/ecoFriendly.webp" alt="ecoFriendly">
+                    <p class="textColorWhite promotionalArea__title">100% Organic Food</p>
+                    <p class="textColorWhite promotionalArea__subTitle">Pesto sauce zucchini jalapenos, <br> halkidiki green olives Cherry mozzarella mozzarella</p>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6 text-center promotionalArea__contents">
+                    <img class="promotionalArea__contentsIcon" src="./assets/images/icons/fireWorks.webp" alt="fireWorks">
+                    <p class="textColorWhite promotionalArea__title">Enjoy!</p>
+                    <p class="textColorWhite promotionalArea__subTitle">Pesto sauce zucchini jalapenos, <br> halkidiki green olives Cherry mozzarella mozzarella</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Promotional Area End -->
+
+    <!-- Category Section Start -->
+    <div class="container categorySection">
+        <h2 class="text-center section__title">Popular Categories</h2>
+        <p class="text-center section__subTitle">Add Popular Categories to weekly line up</p>
+
+        <div class="row categorySection__contents">
+            <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                <div class="categorySection__items categorySection__itemsOne">
+                    <p class="categorySection__itemsTitle">Malta Slices</p>
+                    <p class="categorySection__itemsCount">17 Products</p>
+                    <button class="categorySection__btn">Shop Now</button>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                <div class="categorySection__items categorySection__itemsTwo">
+                    <p class="categorySection__itemsTitle">Mixed Food</p>
+                    <p class="categorySection__itemsCount">17 Products</p>
+                    <button class="categorySection__btn">Shop Now</button>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                <div class="categorySection__items categorySection__itemsThree">
+                    <p class="categorySection__itemsTitle">Orange Juice</p>
+                    <p class="categorySection__itemsCount">17 Products</p>
+                    <button class="categorySection__btn">Shop Now</button>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                <div class="categorySection__items categorySection__itemsFour">
+                    <p class="categorySection__itemsTitle">Special Apple</p>
+                    <p class="categorySection__itemsCount">17 Products</p>
+                    <button class="categorySection__btn">Shop Now</button>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                <div class="categorySection__items categorySection__itemsFive">
+                    <p class="categorySection__itemsTitle">Vegetables</p>
+                    <p class="categorySection__itemsCount">17 Products</p>
+                    <button class="categorySection__btn">Shop Now</button>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                <div class="categorySection__items categorySection__itemsSix">
+                    <p class="categorySection__itemsTitle">Strawburry</p>
+                    <p class="categorySection__itemsCount">17 Products</p>
+                    <button class="categorySection__btn">Shop Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Category Section End -->
+
+    <!-- Fresh Product Section Start -->
+    <div class="container freshProductSection">
+        <h2 class="text-center section__title">Fresh Products</h2>
+        <p class="text-center section__subTitle">We provide fresh and health food service</p>
+        <div class="row freshProductSection__contents">
+            <div class="col-lg-3 col-md-6 col-sl-12 mb-4">
+                <a href="#">
+                    <div class="freshProduct__card text-center">
+                        <img src="./assets/images/freshProduct/freshProduct-1.webp" alt="freshProduct">
+                        <ul>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                        </ul>
+                        <p class="freshProduct__productTitle">Solid Basic Jumpsuit</p>
+                        <p class="freshProduct__productPrice">£11.05</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sl-12 mb-4">
+                <a href="#">
+                    <div class="freshProduct__card text-center">
+                        <img src="./assets/images/freshProduct/freshProduct-2.webp" alt="freshProduct">
+                        <ul>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                        </ul>
+                        <p class="freshProduct__productTitle">Solid Basic Jumpsuit</p>
+                        <p class="freshProduct__productPrice">£11.05</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sl-12 mb-4">
+                <a href="#">
+                    <div class="freshProduct__card text-center">
+                        <img src="./assets/images/freshProduct/freshProduct-3.webp" alt="freshProduct">
+                        <ul>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                        </ul>
+                        <p class="freshProduct__productTitle">Solid Basic Jumpsuit</p>
+                        <p class="freshProduct__productPrice">£11.05</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sl-12 mb-4">
+                <a href="#">
+                    <div class="freshProduct__card text-center">
+                        <img src="./assets/images/freshProduct/freshProduct-4.webp" alt="freshProduct">
+                        <ul>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                        </ul>
+                        <p class="freshProduct__productTitle">Solid Basic Jumpsuit</p>
+                        <p class="freshProduct__productPrice">£11.05</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sl-12 mb-4">
+                <a href="#">
+                    <div class="freshProduct__card text-center">
+                        <img src="./assets/images/freshProduct/freshProduct-5.webp" alt="freshProduct">
+                        <ul>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                        </ul>
+                        <p class="freshProduct__productTitle">Solid Basic Jumpsuit</p>
+                        <p class="freshProduct__productPrice">£11.05</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sl-12 mb-4">
+                <a href="#">
+                    <div class="freshProduct__card text-center">
+                        <img src="./assets/images/freshProduct/freshProduct-6.webp" alt="freshProduct">
+                        <ul>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                        </ul>
+                        <p class="freshProduct__productTitle">Solid Basic Jumpsuit</p>
+                        <p class="freshProduct__productPrice">£11.05</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sl-12 mb-4">
+                <a href="#">
+                    <div class="freshProduct__card text-center">
+                        <img src="./assets/images/freshProduct/freshProduct-7.webp" alt="freshProduct">
+                        <ul>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                        </ul>
+                        <p class="freshProduct__productTitle">Solid Basic Jumpsuit</p>
+                        <p class="freshProduct__productPrice">£11.05</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sl-12 mb-4">
+                <a href="#">
+                    <div class="freshProduct__card text-center">
+                        <img src="./assets/images/freshProduct/freshProduct-8.webp" alt="freshProduct">
+                        <ul>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                        </ul>
+                        <p class="freshProduct__productTitle">Solid Basic Jumpsuit</p>
+                        <p class="freshProduct__productPrice">£11.05</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Fresh Product Section End -->
+
+
+
+
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

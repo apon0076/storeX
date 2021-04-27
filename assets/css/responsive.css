@@ -1,0 +1,121 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    
+}
+
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .headerSection__menuBtn {
+        padding: 0;
+    }
+    .headerSection__menuBtn {
+        font-size: 14px;
+        padding: 0 1.6px;
+    }
+    .headerSection__menuArea ul li {
+        padding: 0 15px;
+    }
+    .headerSection__menuArea ul li a {
+        font-size: 14px;
+    }
+    .category-arrow {
+        padding-left: 5px;
+    }
+    .category-bars {
+        padding-right: 5px;
+    }
+    .headerSectionLogo {
+        width: 70px;
+        border: 1px solid #000000;
+        padding: 2px;
+    }
+    .headerSection__iconsArea {
+        text-align: center !important;
+    }
+    .headerSection__menuArea {
+        text-align: center;
+    }
+    .headerSection__iconsArea ul{
+        margin-top: -3px;
+    }
+    .headerSection__iconsArea ul li a {
+        font-size: 12.8px;
+    }
+    .promotionalArea__bg {
+        height: 400px;
+    }
+}
+
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+    .headerSection__menuBtn {
+        padding: 0;
+    }
+    .headerSection__menuBtn {
+        font-size: 10.4px;
+        padding: 0 1.6px;
+    }
+    .headerSection__menuArea ul li {
+        padding: 0 1.6px;
+    }
+    .headerSection__menuArea ul li a {
+        font-size: 10.4px;
+    }
+    .category-arrow {
+        padding-left: 1.6px;
+    }
+    .category-bars {
+        padding-right: 1.6px;
+    }
+    .headerSectionLogo {
+        width: 55px;
+        border: 1px solid #000000;
+        padding: 2px;
+    }
+    .headerSection__iconsArea {
+        text-align: center !important;
+    }
+    .headerSection__menuArea {
+        text-align: center;
+    }
+    .headerSection__iconsArea ul{
+        margin-top: -5px;
+    }
+    .headerSection__iconsArea ul li a {
+        font-size: 12.8px;
+    }
+    .heroAreaSection__heading {
+        font-size: 41px;
+    }
+    .heroAreaSection__subheading {
+        font-size: 23px;
+    }
+    .heroAreaSection__tagLine {
+        font-size: 14px;
+    }
+    .heroAreaSection {
+        height: 60vh;
+    }
+    .heroAreaSection__overlay {
+        height: 60vh;
+    }
+    .promotionalArea__title {
+        margin-top: 15px;
+    }
+    .promotionalArea__contents {
+        margin-top: 35px;
+    }
+    .promotionalArea__bg {
+        height: 940px;
+    }
+}
+
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .promotionalArea__bg {
+        height: 500px;
+    }
+}
